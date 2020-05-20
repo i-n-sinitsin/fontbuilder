@@ -23,7 +23,6 @@ void GridLayouter::PlaceImages(const QVector<LayoutChar> &chars)
     calculateSize(maxW, maxH, chars.size());
 
     int w = width();
-    int h = height();
 
     int charsPerRow = chars.size()
             ? w / maxW

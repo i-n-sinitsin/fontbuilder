@@ -78,7 +78,7 @@ void FontOptionsFrame::setConfig(FontConfig *config) {
 }
 
 
-void FontOptionsFrame::on_checkBoxAutohinting_toggled(bool checked)
+void FontOptionsFrame::on_checkBoxAutohinting_toggled(bool /*checked*/)
 {
 
 }

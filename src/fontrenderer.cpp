@@ -236,12 +236,19 @@ bool FontRenderer::append_bitmap(uint symbol) {
                 int num = 7;
                 switch (w%8) {
                 case 7:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 6:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 5:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 4:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 3:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 2:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 1:  *dst++ = qRgba(255,255,255,(s&(1<<(num--)))?255:0);
+                    [[fallthrough]];
                 case 0:
                     break;
                 }
